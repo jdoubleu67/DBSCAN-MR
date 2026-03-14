@@ -22,7 +22,7 @@ public class Main {
             //set parameters
             double eps = 0.03;
             int minPts = 5;
-            int numPartitions = 10;         // Math.max(2, dataset.size() / 10000);
+            int numPartitions = 10;
 
             System.out.println("configured parameters:");
             System.out.println("  eps: " + eps);
@@ -34,12 +34,12 @@ public class Main {
             DBSCANMR dbscanMR = new DBSCANMR(eps, minPts, numPartitions);
             DBSCANMR.DBSCANMRResult result = dbscanMR.cluster(dataset);
 
-            String outputFile = "C:\\Users\\juliu\\Desktop\\FINAL DBSCAN GITHUB\\DBSCAN-MR\\densired_2_result.csv";
-            String summaryFile = "C:\\Users\\juliu\\Desktop\\FINAL DBSCAN GITHUB\\DBSCAN-MR\\densired_2_summary.txt";
+            String outputFile = "C:\\Users\\juliu\\Desktop\\FINAL DBSCAN GITHUB\\DBSCAN-MR\\result.csv";
+            String summaryFile = "C:\\Users\\juliu\\Desktop\\FINAL DBSCAN GITHUB\\DBSCAN-MR\\summary.txt";
 
 
-            DataLoader.saveResults("C:\\Users\\juliu\\Desktop\\FINAL DBSCAN GITHUB\\DBSCAN-MR\\result.csv", dataset);
-            DataLoader.saveSummary("C:\\Users\\juliu\\Desktop\\FINAL DBSCAN GITHUB\\DBSCAN-MR\\summary.txt", result);
+            DataLoader.saveResults(outputFile, dataset);
+            DataLoader.saveSummary(summaryFile, result);
 
             System.out.println("\nResults saved to:");
             System.out.println("  - " + outputFile);
