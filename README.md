@@ -12,8 +12,8 @@ Implementation of the **DBSCAN-MR** algorithm based on:
 ---
 
 ### Installation
-1. git clone https://github.com/jdoubleu67/DBSCAN-MR.git
-
+1. ```bash
+   git clone https://github.com/jdoubleu67/DBSCAN-MR.git
 2. Go into IntelliJ or any IDE of your choice and open up the Project Folder
 
 
