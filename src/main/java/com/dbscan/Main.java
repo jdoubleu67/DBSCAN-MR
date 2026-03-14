@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         try {
             String filename =
-                    "C:\\Users\\juliu\\Desktop\\FINAL DBSCAN GITHUB\\DBSCAN-MR\\data\\densired_2_shrink.csv";
+                    "data\\densired_2_shrink.csv";
 
             //load data
             System.out.println("Loading data from: " + filename);
@@ -34,8 +34,8 @@ public class Main {
             DBSCANMR dbscanMR = new DBSCANMR(eps, minPts, numPartitions);
             DBSCANMR.DBSCANMRResult result = dbscanMR.cluster(dataset);
 
-            String outputFile = "C:\\Users\\juliu\\Desktop\\FINAL DBSCAN GITHUB\\DBSCAN-MR\\result.csv";
-            String summaryFile = "C:\\Users\\juliu\\Desktop\\FINAL DBSCAN GITHUB\\DBSCAN-MR\\summary.txt";
+            String outputFile = "result.csv";
+            String summaryFile = "summary.txt";
 
 
             DataLoader.saveResults(outputFile, dataset);
